@@ -10238,10 +10238,8 @@ body {
   background-attachment: scroll;
   background-size: cover;
 
-  animation: backgroundScroll 60s linear 1;
-  animation-fill-mode: both;
+  animation: backgroundScroll 90s ease 1;
   animation-iteration-count: infinite;
-  /*animation-timing-function: ease-in-out;*/
 }
 
 @keyframes backgroundScroll {
@@ -10254,7 +10252,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
