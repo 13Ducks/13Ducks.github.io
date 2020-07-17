@@ -10228,12 +10228,27 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 90%, #000000 100%), url("../assets/img/vector.svg");
-  background-position: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 90%, #000000 100%), url("../assets/img/bg.svg");
+  /*background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  background-size: cover; */
+
+  background-repeat: repeat;
+  background-attachment: scroll;
   background-size: cover;
+
+  animation: backgroundScroll 60s linear 1;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  /*animation-timing-function: ease-in-out;*/
 }
+
+@keyframes backgroundScroll {
+  0% {background-position: 0 0; }
+  50% {background-position: -500px 0px; }
+}
+
 .masthead h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
