@@ -10240,12 +10240,21 @@ body {
 
   animation: backgroundScroll 90s ease 1;
   animation-iteration-count: infinite;
+
+  -webkit-animation: backgroundScroll 90s ease 1;
+  -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes backgroundScroll {
   0% {background-position: 0 0; }
   50% {background-position: -500px 0px; }
 }
+
+@-webkit-keyframes backgroundScroll {
+  0% {background-position: 0 0; }
+  50% {background-position: -500px 0px; }
+}
+
 
 .masthead h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
