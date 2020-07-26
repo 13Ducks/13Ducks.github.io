@@ -10229,30 +10229,26 @@ body {
   min-height: 35rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 90%, #000000 100%), url("../assets/img/bg.svg");
-  /*background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover; */
 
   background-repeat: repeat;
   background-attachment: scroll;
   background-size: cover;
 
-  animation: backgroundScroll 90s ease 1;
+  animation: backgroundScroll 40s linear;
   animation-iteration-count: infinite;
 
-  -webkit-animation: backgroundScroll 90s ease 1;
+  -webkit-animation: backgroundScroll 40s linear;
   -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes backgroundScroll {
   0% {background-position: 0 0; }
-  50% {background-position: -500px 0px; }
+  100% {background-position: -100vw 0; }
 }
 
 @-webkit-keyframes backgroundScroll {
   0% {background-position: 0 0; }
-  50% {background-position: -500px 0px; }
+  100% {background-position: -100vw 0; }
 }
 
 
