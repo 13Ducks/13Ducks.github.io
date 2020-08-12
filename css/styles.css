@@ -10383,10 +10383,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: #64a19d;
 }
 .contact-section .social a:active {
-  color: #fff;
+  color: #73d4ce;
 }
 
 .footer {
