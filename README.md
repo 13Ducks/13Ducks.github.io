@@ -1,3 +1,3 @@
-a very mediocre website for a very mediocre programmer
+Personal Website!
 
 https://aaryan.dev
