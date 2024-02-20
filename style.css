@@ -1,0 +1,106 @@
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navbar-brand,
+.nav-link {
+  font-weight: bold;
+  color: black !important;
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid black;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='3' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.close-btn {
+  display: none;
+}
+
+.fixed-position {
+  overflow: hidden;
+}
+
+.jumbotron {
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing {
+    font-size: 2rem;
+    transition: height 0s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(40, 63, 57, 0.95);
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-collapse .navbar-nav .nav-link,
+  .close-btn {
+    color: white !important;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+  }
+
+  .navbar-collapse .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    opacity: 1;
+  }
+
+  .navbar-collapse.show {
+    height: calc(100vh);
+    transition: height .35s ease;
+  }
+
+  .close-btn:hover {
+    opacity: 1;
+  }
+
+  .close-btn:focus {
+    outline: none;
+  }
+
+  .close-btn {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    font-size: 48px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1100;
+    /* Ensure it's above the content */
+  }
+}
