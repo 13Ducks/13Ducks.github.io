@@ -1,3 +1,39 @@
+@font-face {
+  font-family: CircularStd;
+  src: url(assets/fonts/CircularStd-Black.woff) format('woff');
+  src: url(assets/fonts/CircularStd-Black.woff2) format('woff2');
+  font-weight: 800;
+  font-style: normal
+}
+
+@font-face {
+  font-family: CircularStd;
+  src: url(assets/fonts/CircularStd-Medium.woff) format('woff');
+  src: url(assets/fonts/CircularStd-Medium.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: CircularStd;
+  src: url(assets/fonts/CircularStd-Bold.woff) format('woff');
+  src: url(assets/fonts/CircularStd-Bold.woff2) format('woff2');
+  font-weight: 600;
+  font-style: normal
+}
+
+@font-face {
+  font-family: CircularStd;
+  src: url(assets/fonts/CircularStd-Book.woff) format('woff');
+  src: url(assets/fonts/CircularStd-Book.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal
+}
+
+* {
+  font-family: 'CircularStd', sans-serif;
+}
+
 .navbar-brand img {
   width: 40px;
   height: 40px;
@@ -7,7 +43,7 @@
 
 .navbar-brand,
 .nav-link {
-  font-weight: bold;
+  font-weight: 600;
   color: black !important;
   font-size: 20px;
 }
@@ -39,7 +75,6 @@
 
 .jumbotron {
   background-color: white;
-  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -103,4 +138,195 @@
     z-index: 1100;
     /* Ensure it's above the content */
   }
+}
+
+#projects {
+  width: 100%;
+  margin-bottom: 100px
+}
+
+#landing-top {
+  height: 85vh;
+  min-height: 500px;
+  width: 100%;
+  margin: auto
+}
+
+.landing-block {
+  max-width: 600px
+}
+
+.landing-block .landing-title {
+  font-size: 26pt;
+  font-family: 'CircularStd', sans-serif;
+  font-weight: 900
+}
+
+.email-link,
+.landing-block p {
+  font-size: 14pt;
+  font-weight: 300
+}
+
+.email-link {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  transition: .2s ease-out;
+  -webkit-transition: .2s ease-out
+}
+
+.email-link:hover {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff
+}
+
+#featured-work {
+  width: 100%;
+  margin-bottom: 100px
+}
+
+.section-title {
+  font-size: 22pt;
+  font-weight: 700
+}
+
+.project-card {
+  width: 100%;
+  height: 425px;
+  background-color: #eee;
+  cursor: pointer
+}
+
+.image {
+  max-width: 70%;
+  height: auto;
+  margin: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  overflow: hidden;
+  -o-object-fit: contain;
+  object-fit: contain;
+  display: block
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  height: 100%;
+  width: -webkit-calc(100% - 30px);
+  width: calc(100% - 30px);
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  background-color: #42776a;
+  z-index: 100
+}
+
+.image-overlay:hover {
+  opacity: .7
+}
+
+.image-overlay-text {
+  color: #fff;
+  padding-top: 40px;
+  padding-left: 40px;
+  max-width: 60%;
+  line-height: 1
+}
+
+.project-title {
+  font-size: 20pt;
+  font-weight: 900
+}
+
+.project-company,
+.project-title {
+  font-family: CircularStd, sans-serif
+}
+
+.project-company {
+  position: relative;
+  font-size: 12pt;
+  font-weight: 500;
+  bottom: 3px
+}
+
+.modal-close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  z-index: 999;
+  color: black !important;
+  opacity: 1;
+}
+
+.modal-content {
+  height: 100%;
+  width: 100%;
+}
+
+.modal-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: auto;
+  background-color: lightgreen;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767.98px) {
+  .modal-image {
+    max-width: 90% !important
+  }
+}
+
+.modal-header {
+  background-color: #eee;
+  width: 100%;
+  padding: 20px;
+  height: 70%;
+  position: relative;
+}
+
+.modal-bottom {
+  padding: 25px 50px 20px
+}
+
+.modal-name {
+  font-size: 20pt;
+  font-weight: 900;
+  font-family: CircularStd, sans-serif;
+  line-height: 1
+}
+
+.modal-company {
+  position: relative;
+  font-weight: 500;
+  bottom: 3px
+}
+
+.modal-company,
+.modal-description {
+  font-size: 12pt;
+  font-family: CircularStd, sans-serif
+}
+
+.modal-description {
+  font-weight: 300
+}
+
+.modal-dialog {
+  width: 85%;
+  height: 75%;
+  max-width: 1000px;
+  margin: 2rem auto;
 }
